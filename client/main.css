@@ -3,9 +3,66 @@ body{
 	margin: 0;
 	background-color: #2D3141;
 }
-h1{
+.salty-logo{
 	font-family: 'Philosopher', sans-serif;
+	color: #F6F6F4;
 }
+/***** User UI CSS *****/
+.user-ui-h{
+	font-family: 'Philosopher', sans-serif;
+	color: #F6F6F4;
+}
+.signup{
+	width: 300px;
+	border:none;
+	padding: 10px 15px;
+	margin: 5px 0;
+	font-size: 1.20em;
+	border-radius: 4px;
+	font-family: 'Abel', sans-serif;
+}
+.signup-button{
+	padding: 8px 20px;
+	text-align: center;
+	font-size: 1em;
+	background-color: #E39219;
+	border: none;
+	border-radius: 1px;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+}
+.signup-button:hover{
+	background-color: #F6F6F4;
+}
+.signin-button{
+	padding: 8px 20px;
+	text-align: center;
+	font-size: 1em;
+	background-color: #E39219;
+	border: none;
+	border-radius: 1px;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+}
+.signin-button:hover{
+	background-color: #F6F6F4;
+}
+.logout{
+	padding: 6px 15px;
+	text-align: center;
+	font-size: 1em;
+	background-color: #E39219;
+	border: none;
+	border-radius: 1px;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+}
+.logout:hover{
+	background-color: #F6F6F4;
+}
+/***** User UI CSS *****/
+
+/***** Rant Form CSS *****/
 .rant-form-container{
 	margin: 0;
 	padding: 30px 50px 10px 50px;
@@ -36,7 +93,6 @@ h1{
 	font-family: 'Philosopher', sans-serif;
 	cursor: pointer;
 }
-
 .charCount{
 	margin-right: 10px;
 	color: white;
@@ -47,3 +103,4 @@ h1{
   color: red;
   font-family: 'Abel', sans-serif;
 }
+/***** Rant Form CSS *****/

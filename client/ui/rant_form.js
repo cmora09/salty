@@ -13,7 +13,9 @@ Template.rantForm.events({
 		var rant = $('.rantBox').val();
 		$('.rantBox').val("");
 		Session.set('charNum', 0);
-		Rants.insert({message: rant});
+		if (Meteor.user()){
+			Rants.insert({message: rant, user: Meteor.user().username});
+		}
 	}
 });
 Template.rantForm.helpers({
@@ -32,7 +34,7 @@ Template.rantForm.helpers({
 	},
 	//disables button if character number is 0 or less or if the charnum is greater than 200
 	disableButton: function() {
-		if (Session.get('charNum') <= 0 || Session.get('charNum') > 175){
+		if (Session.get('charNum') <= 0 || Session.get('charNum') > 175|| !Meteor.user()){
 			return 'disabled';
 		}
 	}
