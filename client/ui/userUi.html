@@ -1,9 +1,13 @@
 <template name="userUi">
+	{{#if currentUser}}
+	<header>
+		<nav class="nav-bar">
+			<h3 class="user-ui-h nav-h">Welcome back, <strong>{{currentUser.username}}.</strong></h3>
+			<button type="submit" class="logout">Log out</button>
+		</nav>
+	</header>
+	{{else}}
 	<div class="user-ui-container">
-		{{#if currentUser}}
-		<h3 class="user-ui-h">Welcome back, <strong>{{currentUser.username}}.</strong></h3>
-		<button type="submit" class="logout">Log out</button>
-		{{else}}
 		<h3 class="user-ui-h">Already Salty?</h3>
 		<div class="userform-container">
 			<input class="signin-username signup" placeholder="Username">
@@ -23,6 +27,6 @@
 			<br>
 		</div>
 		<button class="signup-button" type="submit">Sign up</button>
-		{{/if}}
 	</div>
+	{{/if}}
 </template>

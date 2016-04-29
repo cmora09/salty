@@ -7,10 +7,45 @@ body{
 	font-family: 'Philosopher', sans-serif;
 	color: #F6F6F4;
 }
-/***** User UI CSS *****/
+/***** USER UI CSS *****/
+
+/*** NAV ***/
+.nav-bar{
+	width: 100%;
+	border-bottom: solid 1px rgba(255,255,255,0.25);
+	height: 40px;
+}
+.nav-h{
+	display: inline-block;
+	margin:0;
+}
+.logout{
+	padding: 3px 10px;
+	text-align: center;
+	font-size: 1em;
+	background-color: #E39219;
+	border: none;
+	border-radius: 1px;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+	margin-right: 2px;
+	display: inline-block;
+	margin: 0;
+	float: right;
+}
+.logout:hover{
+	background-color: #F6F6F4;
+}
+/*** NAV BAR ***/
+.user-ui-container{
+	background-color: rgba(255,255,255,0.25);
+	display:inline-block;
+	border-radius: 4px;
+}
 .user-ui-h{
 	font-family: 'Philosopher', sans-serif;
 	color: #F6F6F4;
+	display: inline-block;
 }
 .signup{
 	width: 300px;
@@ -47,27 +82,16 @@ body{
 .signin-button:hover{
 	background-color: #F6F6F4;
 }
-.logout{
-	padding: 6px 15px;
-	text-align: center;
-	font-size: 1em;
-	background-color: #E39219;
-	border: none;
-	border-radius: 1px;
-	font-family: 'Abel', sans-serif;
-	cursor: pointer;
-}
-.logout:hover{
-	background-color: #F6F6F4;
-}
-/***** User UI CSS *****/
 
-/***** Rant Form CSS *****/
+/***** USER UI CSS *****/
+
+/***** RANT FORM CSS *****/
 .rant-form-container{
 	margin: 0;
 	padding: 30px 50px 10px 50px;
 	display: inline-block;
-	background-color: #545972;
+	background-color: rgba(255,255,255,0.25);
+/*	background-color: #545972;*/
 	border: solid 1px #F6F6F4;
 	border-radius: 4px;
 }
@@ -103,4 +127,4 @@ body{
   color: red;
   font-family: 'Abel', sans-serif;
 }
-/***** Rant Form CSS *****/
+/***** RANT FORM CSS ****/
