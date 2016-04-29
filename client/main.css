@@ -1,1 +1,49 @@
 /* CSS declarations go here */
+body{
+	margin: 0;
+	background-color: #2D3141;
+}
+h1{
+	font-family: 'Philosopher', sans-serif;
+}
+.rant-form-container{
+	margin: 0;
+	padding: 30px 50px 10px 50px;
+	display: inline-block;
+	background-color: #545972;
+	border: solid 1px #F6F6F4;
+	border-radius: 4px;
+}
+.rantBox {
+  background-color: #F6F6F4;
+  width:370px;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: 'Abel', sans-serif;
+}
+.button-rant-info{
+	display: inline-block;
+	margin: 0px;
+	float:right;
+}
+.rant-button{
+	padding: 8px 20px;
+	text-align: center;
+	font-size: 1em;
+	background-color: #E39219;
+	border: none;
+	border-radius: 1px;
+	font-family: 'Philosopher', sans-serif;
+	cursor: pointer;
+}
+
+.charCount{
+	margin-right: 10px;
+	color: white;
+	font-family: 'Abel', sans-serif;
+}
+.errCharCount {
+  margin-right: 10px;
+  color: red;
+  font-family: 'Abel', sans-serif;
+}
