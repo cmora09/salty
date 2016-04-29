@@ -4,10 +4,15 @@
 </head>
 
 <body>
-   {{> userUi}}
+  {{> userUi}}
+  <div class="wrapper">
 
-  <h1 class="salty-logo">Salty</h1>
+    <div class="rantform-main">
+      {{> rantForm}}
+    </div>
+    <div class="rantfeed-main">
+      {{> rantFeed}}
+    </div>
+  </div>
 
-  {{> rantForm}}
-  {{> rantFeed}}
 </body>

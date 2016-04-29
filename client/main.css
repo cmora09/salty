@@ -3,6 +3,17 @@ body{
 	margin: 0;
 	background-color: #2D3141;
 }
+.wrapper{
+	width: 100%;
+}
+.rantfeed-main{
+	display:inline-block;
+	margin-right: 20px;
+	float: right;
+}
+.rantform-main{
+	display:inline-block;
+}
 .salty-logo{
 	font-family: 'Philosopher', sans-serif;
 	color: #F6F6F4;
@@ -130,7 +141,7 @@ body{
 	background-color: #E39219;
 	border: none;
 	border-radius: 2px;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Abel', sans-serif;
 	cursor: pointer;
 }
 .charCount{
@@ -148,10 +159,8 @@ body{
 /**** FEED CSS ****/
 
 .salty-feed-container{
+	width: 700px;
 	display: inline-block;
-	background-color: rgba(255,255,255,0.25);
-	border: solid 1px #F6F6F4;
-	border-radius: 4px;
 }
 .salty-feed-h{
 	font-family: 'Philosopher', sans-serif;
@@ -160,4 +169,27 @@ body{
 .salty-feed-ul{
 	list-style: none;
 	padding: 0;
+}
+.message-container{
+	width:100%;
+	margin-bottom: 20px;
+}
+
+.rant-message{
+	margin: 0;
+	border-radius: 2px;
+	padding: 5px;
+	font-family: 'Philosopher', sans-serif;
+	width: 100%;
+	background-color: rgba(255,255,255,0.25);
+	color: #F6F6F4;
+}
+.timestamp{
+	width: 100%;
+	padding: 5px;
+	margin: 0;
+	border-radius: 2px;
+	font-family: 'Abel', sans-serif;
+	background-color: rgba(227,146,23,0.4);
+	color: #F6F6F4;
 }
