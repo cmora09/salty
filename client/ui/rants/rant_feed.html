@@ -1,0 +1,14 @@
+<template name="rantFeed">
+	<div class="salty-feed-container">
+		<h1 class="salty-feed-h">The Salty Feed</h1>
+		<ul class="salty-feed-ul">
+			{{#each rantMessage}}
+			<li class="rant-list-item">
+				<h3 class="rant-message">{{this.message}}</h3>
+				<br>
+				<p class="timestamp">{{this.timestamp}}</p>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>

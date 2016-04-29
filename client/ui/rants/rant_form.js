@@ -13,9 +13,7 @@ Template.rantForm.events({
 		var rant = $('.rantBox').val();
 		$('.rantBox').val("");
 		Session.set('charNum', 0);
-		if (Meteor.user()){
-			Rants.insert({message: rant, user: Meteor.user().username});
-		}
+		Meteor.call('insertRant', rant);
 	}
 });
 Template.rantForm.helpers({
