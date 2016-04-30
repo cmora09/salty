@@ -20,7 +20,4 @@ Template.userUi.events({
 			if(error) alert(error);
 		});
 	},
-	'click .logout': function(){
-		Meteor.logout();
-	}
 });

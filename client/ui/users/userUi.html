@@ -1,17 +1,4 @@
 <template name="userUi">
-	{{#if currentUser}}
-	<header>
-		<nav class="nav-bar">
-			<h1 class="user-ui-h nav-h">Salty</h1>
-			<button type="submit" class="logout">Log out</button>
-		</nav>
-	</header>
-	{{else}}
-	<header>
-		<nav class="nav-bar">
-			<h1 class="user-ui-h nav-h">Salty</h1>
-		</nav>
-	</header>
 	<div class="user-ui-container">
 		<h3 class="user-ui-h">Already Salty?</h3>
 		<div class="userform-container">
@@ -34,5 +21,4 @@
 		</div>
 		<button class="signup-button" type="submit">Sign up</button>
 	</div>
-	{{/if}}
 </template>

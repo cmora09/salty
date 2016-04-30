@@ -4,9 +4,9 @@
 </head>
 
 <body>
-  {{> userUi}}
+  {{#if currentUser}}
+  {{> navBar}}
   <div class="wrapper">
-
     <div class="rantform-main">
       {{> rantForm}}
     </div>
@@ -14,5 +14,16 @@
       {{> rantFeed}}
     </div>
   </div>
-
+  {{else}}
+    {{> navBar}}
+   <div class="wrapper">
+    {{> userUi}}
+    <div class="rantfeed-main">
+      {{> rantFeed}}
+    </div>
+    <div class="rantform-main">
+      {{> rantForm}}
+    </div>
+  </div>
+  {{/if}}
 </body>
