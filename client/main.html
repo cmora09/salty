@@ -1,6 +1,6 @@
 <head>
   <title>Salty</title>
-  <link href='https://fonts.googleapis.com/css?family=Abel|Philosopher' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Abel|Roboto+Condensed' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -9,6 +9,8 @@
   <div class="wrapper">
     <div class="rantform-main">
       {{> rantForm}}
+      <br />
+      {{> ownFeed}}
     </div>
     <div class="rantfeed-main">
       {{> rantFeed}}
@@ -20,9 +22,6 @@
     {{> userUi}}
     <div class="rantfeed-main">
       {{> rantFeed}}
-    </div>
-    <div class="rantform-main">
-      {{> rantForm}}
     </div>
   </div>
   {{/if}}

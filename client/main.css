@@ -14,8 +14,12 @@ body{
 .rantform-main{
 	display:inline-block;
 }
+.own-feed-main{
+	display:inline-block;
+	width: 300px;
+}
 .salty-logo{
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Dosis', sans-serif;
 	color: #F6F6F4;
 	text-align: center;
 }
@@ -62,7 +66,7 @@ body{
 	padding: 5px;
 }
 .user-ui-h{
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #F6F6F4;
 	text-align: center;
 }
@@ -163,7 +167,7 @@ body{
 	display: inline-block;
 }
 .salty-feed-h{
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #F6F6F4;
 }
 .salty-feed-ul{
@@ -179,7 +183,7 @@ body{
 	margin: 0;
 	border-radius: 2px;
 	padding: 5px;
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	width: 100%;
 	background-color: rgba(255,255,255,0.25);
 	color: #F6F6F4;
@@ -191,5 +195,22 @@ body{
 	border-radius: 2px;
 	font-family: 'Abel', sans-serif;
 	background-color: rgba(227,146,23,0.4);
+	color: #F6F6F4;
+}
+
+/**** USER FEED CSS ****/
+.user-feed-container{
+	width: 350px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.timestamp-user{
+	width: 100%;
+	padding: 5px;
+	margin: 0;
+	border-radius: 2px;
+	font-family: 'Abel', sans-serif;
+	background-color: rgba(160,196,226,0.6);
 	color: #F6F6F4;
 }

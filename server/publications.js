@@ -2,3 +2,9 @@
 Meteor.publish('rants', function(){
 	return Rants.find();
 });
+Meteor.publish('ownRants', function(username) {  
+  return Rants.find( { user: username }, {
+  	sort: {timestamp: -1}, 
+  	limit: 10
+	});
+});

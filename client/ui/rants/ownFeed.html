@@ -1,0 +1,17 @@
+<template name="ownFeed">
+	<div class="user-feed-container">
+		<h1 class="user-ui-h"> Your Own Saltyness</h1>
+		<div class="main-feed">
+			<ul class="salty-feed-ul">
+				{{#each ownMessage}}
+				<div class="message-container">
+					<li class="rant-list-item">
+						<h3 class="rant-message">{{this.message}}</h3>
+					</li>
+					<p class="timestamp-user">{{this.timestamp}}</p>
+				</div>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>

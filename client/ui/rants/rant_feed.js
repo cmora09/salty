@@ -1,6 +1,8 @@
 //Client is subscribing to it inside this template.
 Template.rantFeed.onCreated( function(){
-	this.subscribe('rants');
+	if(Meteor.user()){
+		this.subscribe('rants');
+	}
 });
 
 Template.rantFeed.helpers({
