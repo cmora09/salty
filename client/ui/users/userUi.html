@@ -1,24 +1,24 @@
 <template name="userUi">
-	<div class="user-ui-container">
+	<div class="container-fluid">
 		<h3 class="user-ui-h">Already Salty?</h3>
-		<div class="userform-container">
-			<input class="signin-username signup" placeholder="Username">
+		<div class="form-group">
+			<input class="form-control input-sm signup signin-username" placeholder="Username">
 			<br>
-			<input type="password" class="signin-password signup" placeholder="Password">
+			<input class="form-control input-sm signin-password signup" type="password" placeholder="Password">
 		</div>
-		<button class="signin-button" type="submit">Sign in</button>
+		<button type="button" class="btn btn-info" id="signin-button">Sign in</button>
 		<br>
 		<h3 class="user-ui-h">Want to be a Salty member?</h3>
 		<div class="userform-container">
-			<input class="signup-fname signup" placeholder="First Name">
+			<input class="form-control signup-fname signup" placeholder="First Name">
 			<br>
-			<input class="signup-lname signup" placeholder="Last Name">
+			<input class="form-control signup-lname signup" placeholder="Last Name">
 			<br>
-			<input class="signup-username signup" placeholder="Username">
+			<input class="form-control signup-username signup" placeholder="Username">
 			<br>
-			<input type="password" class="signup-password signup" placeholder="Password">
+			<input class="form-control signup-password signup" type="password" placeholder="Password">
 			<br>
 		</div>
-		<button class="signup-button" type="submit">Sign up</button>
+		<button class="btn btn-info" id="signup-button" type="submit">Sign up</button>
 	</div>
 </template>

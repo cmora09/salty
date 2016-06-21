@@ -5,13 +5,13 @@ Template.rantForm.onRendered(function () {
 
 Template.rantForm.events({
 	//grabs current value of the text area.
-	'input .rantBox': function() {
-		Session.set('charNum', $('.rantBox').val().length);
+	'input .rant-box': function() {
+		Session.set('charNum', $('.rant-box').val().length);
 	},
 
 	'click .rant-button': function() {
-		var rant = $('.rantBox').val();
-		$('.rantBox').val("");
+		var rant = $('.rant-box').val();
+		$('.rant-box').val("");
 		Session.set('charNum', 0);
 		Meteor.call('insertRant', rant);
 	}
@@ -19,11 +19,11 @@ Template.rantForm.events({
 Template.rantForm.helpers({
 	//gets current 'charNum' and subtracts it from 200 to show how many characters are left for the rant
 	charCount: function() {
-		return 175 - Session.get('charNum');
+		return 150 - Session.get('charNum');
 	},
 	//returns different color text is the character count exceeds 200
 	charClass: function() {
-		if (Session.get('charNum') > 175){
+		if (Session.get('charNum') > 150){
 			return 'errCharCount'; //css class name
 		}
 		else{
@@ -32,7 +32,7 @@ Template.rantForm.helpers({
 	},
 	//disables button if character number is 0 or less or if the charnum is greater than 200
 	disableButton: function() {
-		if (Session.get('charNum') <= 0 || Session.get('charNum') > 175|| !Meteor.user()){
+		if (Session.get('charNum') <= 0 || Session.get('charNum') > 150 || !Meteor.user()){
 			return 'disabled';
 		}
 	}

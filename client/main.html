@@ -6,25 +6,18 @@
 <body>
   {{#if currentUser}}
   {{> navBar}}
-  <div class="wrapper">
-    <div class="col-md-4 col-xs-12">
-      {{> rantForm}}
-      <br />
-      {{> ownFeed}}
-    </div>
-    <div class="col-md-6 col-xs-12">
-      {{> rantFeed}}
-    </div>
+  <div class="container">
+    {{> rantForm}}
+    {{> rantFeed}}
+    {{> ownFeed}}
   </div>
   {{else}}
     {{> navBar}}
-   <div class="wrapper">
+   <div class="container">
    <div class="col-md-4 col-xs-12">
     {{> userUi}}
    </div> 
-    <div class="col-md-6 col-xs-12">
-      {{> rantFeed}}
-    </div>
+      {{> rantForm}}
   </div>
   {{/if}}
 </body>

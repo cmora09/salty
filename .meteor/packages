@@ -21,3 +21,5 @@ session
 accounts-ui
 accounts-password
 twbs:bootstrap
+momentjs:moment
+konecty:autolinker

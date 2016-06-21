@@ -1,5 +1,5 @@
 Template.userUi.events({
-	'click .signup-button': function(){
+	'click #signup-button': function(){
 		var user = {
 			username: $('.signup-username').val(),
 			password: $('.signup-password').val(),
@@ -12,7 +12,7 @@ Template.userUi.events({
 			if(error) alert(error);
 		});
 	},
-	'click .signin-button': function(){
+	'click #signin-button': function(){
 		var username = $('.signin-username').val();
 		var password = $('.signin-password').val();
 

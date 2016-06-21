@@ -1,15 +1,29 @@
 <template name="navBar">
 	{{#if currentUser}}
 	<header>
-		<nav class="nav-bar">
-			<h1 class="user-ui-h nav-h">Salty</h1>
-			<button type="submit" class="logout">Log out</button>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<!-- 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</button> -->
+					<a class="navbar-brand salty-logo" href="#">Salty</a>
+					<ul class="nav navbar-nav">
+						<li role="presentation" class="logout pull-right"><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 	{{else}}
 	<header>
 		<nav class="nav-bar">
-			<h1 class="user-ui-h nav-h">Salty</h1>
+			<ul>
+				<li><h1 class="user-ui-h nav-h"></h1></li>
+			</ul>
 		</nav>
 	</header>
 	{{/if}}

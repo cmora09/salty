@@ -1,12 +1,12 @@
 <template name="rantFeed">
-	<div class="salty-feed-container col-md-6 col-xs-12">
-		<h1 class="user-ui-h"> The Salty Feed</h1>
+	<div class="salty-feed-container col-md-4 col-xs-12">
+		<h2 class="user-ui-h text-center"> The Salty Feed</h2>
 		<div class="main-feed">
 			<ul class="salty-feed-ul">
 				{{#each rantMessage}}
 				<div class="message-container">
 					<li class="rant-list-item">
-						<h3 class="rant-message">{{this.message}}</h3>
+						<h4 class="rant-message">{{this.message}}</h4>
 					</li>
 					<p class="timestamp">{{this.timestamp}}</p>
 				</div>
